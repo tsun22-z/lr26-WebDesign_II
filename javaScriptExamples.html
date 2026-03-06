@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body
+
+<p> Click the button to create and display two variables.</p>
+<button onclick="myvariables()">Click Me</button>
+<p id="number"> </p>
+<p id="string"> </p>
+<p id="boolean"> </p>
+<script>
+    function myvariables() 
+    {
+    var ntotalAmount = 1000;
+    var sService = "Accountacy";
+    
+    document.getElementById("number").innerHTML = "Amount: " + ntotalAmount;
+    document.getElementById("string").innerHTML = "Service: " + sService;
+    document.getElementById("boolean").innerHTML = (ntotalAmount == 1000);
+
+    document.getElementById("strings").innerHTML += "<p><button onclick='myString()'>Click Me Next</button></p>";
+
+    }
+    
+    function myString() 
+    {
+        var fName = "Saad";
+        var lName = "Mauvia";
+        document.getElementById("string").innerHTML += "<p>Name: " + fName + " " + lName + "</p>";
+    }
+    
+    function StockLevel()
+    {
+        var stock = 50;
+        var reorder=10;
+        if (stock < reorder)
+        {
+            alert="Low"
+        }
+        else if (stock > 100)
+        {
+            alert="Good"
+        }
+        else
+        {
+            alert="High"
+        }
+        document.getElementById("boolean").innerHTML=Alert;
+        
+    }
+
+</script>
+</body>
+</html>
